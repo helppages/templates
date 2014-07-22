@@ -1,0 +1,169 @@
+/**
+ * Brown Bag Theme
+ * Created by: Ryan Quinn
+ */
+
+body {
+	background: url(http://cdn.helppag.es/templates/brown_bag/background.png) repeat top left;
+}
+
+.top-bar {
+	background-color: #404040;
+	border:none;
+	color:#EBE6DA;
+}
+
+/*The title of the page overall*/
+.title {
+
+}
+
+/*Link inside the title */
+.title a {
+	color:#000;
+	text-shadow: 0 1px 2px rgb(174, 170, 160);
+}
+
+.muted {
+	font-size: .75em;
+	color: rgb(174, 170, 160);
+}
+
+#search-bar {
+	background: rgba(174, 170, 160, .6);
+
+}
+
+/*----- Sidebar -----*/
+#navigation {
+	background: rgba(174, 170, 160, .6);
+	border: 1px solid rgb(174, 170, 160);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+#navigation .category {
+	background-color:transparent;
+	border-bottom:1px solid rgb(174, 170, 160);
+}
+
+#navigation .category:last-child {
+	border-bottom:none;
+}
+
+.nav li a {
+	width:100%;
+	display:block;
+	cursor:pointer;
+	color:#000;
+}
+
+#navigation ul.files {
+	padding-left:10px;
+}
+
+#navigation span.glyphicon {
+	margin-right:10px;
+}
+
+#navigation li a:hover {
+	background: rgb(174, 170, 160);
+}
+
+#navigation li.active>a {
+  background: rgba(174, 170, 160, .6);
+}
+
+/*----- Page ----*/
+
+.page-template {
+
+}
+
+.page-template .page-container {
+	z-index: 1;
+	background-color: rgba(174, 170, 160, .6);
+}
+
+.page-container .page {
+	position: relative;
+	padding:20px;
+	background: #fff;
+	border:1px solid #efefef;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;
+	font-size:1.1em;
+	line-height:1.75em;
+}
+
+.page:after, .page:before {
+	content: '';
+	z-index: -1;
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	width: 70%;
+	max-width: 100px; /* avoid rotation causing ugly appearance at large container widths */
+	max-height: 50px;
+	height: 55%;
+	-webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+	-webkit-transform: skew(-15deg) rotate(-6deg);
+	-moz-transform: skew(-15deg) rotate(-6deg);
+	-ms-transform: skew(-15deg) rotate(-6deg);
+	-o-transform: skew(-15deg) rotate(-6deg);
+	transform: skew(-15deg) rotate(-6deg);
+}
+
+.page:after {
+	left: auto;
+	right: 10px;
+	-webkit-transform: skew(15deg) rotate(6deg);
+	-moz-transform: skew(15deg) rotate(6deg);
+	-ms-transform: skew(15deg) rotate(6deg);
+	-o-transform: skew(15deg) rotate(6deg);
+	transform: skew(15deg) rotate(6deg);
+}
+
+.page table.table thead th {
+  border: 1px
+}
+
+.page table td {
+	padding:5px 10px;
+	border:1px solid rgb(174, 176, 160);
+}
+
+.page table thead>tr:first-child th {
+  border-bottom:1px solid rgb(174, 176, 160);
+}
+
+.page table tr:nth-child(odd) td {
+	background-color: #EBE6DA;
+}
+
+.page img {
+	border:2px solid #ebe6da;
+	margin: 15px auto;
+	border-radius:5px;
+}
+
+.page-template .page-info {
+
+}
+
+.page-info a {
+	color: rgb(174, 176,160);
+}
+
+/*----- Footer -----*/
+.footer {
+	text-align:right;
+}
+
+.footer a {
+	color: rgb(174, 170, 160);
+}
